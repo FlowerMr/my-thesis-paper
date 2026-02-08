@@ -46,29 +46,17 @@ The study develops an **EfficientNet-B0 based deep learning pipeline** for multi
 ## Usage
 
 1. Clone the repository:
-```bash
-git clone https://github.com/<username>/<repo>.git
-Prepare datasets:
-
-Place HAM10000 and DDI datasets in the /data folder
-
-Ensure metadata CSV files are correctly mapped
+git clonehttps://github.com/FlowerMr/my-thesis-paper
 
 Train the model:
 
-bash
-Copy code
 python train_ham10000.py
 python train_ddi_debias.py
-Generate Grad-CAM visualizations:
 
-bash
-Copy code
+Generate Grad-CAM visualizations:
 python generate_gradcam.py --dataset ham10000 --output gradcam/
 Evaluate fairness and trust score:
 
-bash
-Copy code
 python evaluate_fairness.py --dataset ddi
 Results
 HAM10000 Test Accuracy: 0.41
@@ -90,14 +78,11 @@ Expansion of training data for darker skin tones
 
 Refinement of trust score with dermatologist feedback
 
-PDF
-The full paper is available as PDF: Download PDF
 
 Citation
 If you use this repository in your research, please cite:
 
 graphql
-Copy code
 @article{golkar2026fair,
   title={Fair and Explainable Deep Learning for Skin Lesion Classification Across Fitzpatrick Skin Types},
   author={Golkar Khouzani, Mohammadreza},
